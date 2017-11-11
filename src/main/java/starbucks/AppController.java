@@ -12,7 +12,7 @@ public class AppController implements IApp
     private IMenuCommand displayMyCards ;
     private IMenuCommand displayPayments ;
     private IMenuCommand displayRewards ;
-    private IMenuCommand doExit ;    
+    private IMenuCommand doStore ;    
     private Frame frame ;
 
     public AppController()
@@ -27,7 +27,7 @@ public class AppController implements IApp
         displayMyCards  = new MenuCommand() ;
         displayPayments = new MenuCommand() ;
         displayRewards  = new MenuCommand() ;
-        doExit          = new MenuCommand() ;
+        doStore         = new MenuCommand() ;
         displayMyCards.setReceiver(
             new IMenuReceiver() {
                 public void doAction() {
@@ -49,17 +49,17 @@ public class AppController implements IApp
                 }
             }
         ) ;
-        doExit.setReceiver(
+        doStore.setReceiver(
             new IMenuReceiver() {
                 public void doAction() {
-                   System.out.println( "Goodbye!" ) ;
+                    frame.setCurrentScreen( store ) ;
                 }
             }
         ) ;        
         frame.setMenuItem ( "A", displayMyCards ) ;
         frame.setMenuItem ( "B", displayPayments ) ;
         frame.setMenuItem ( "C", displayRewards ) ;
-        frame.setMenuItem ( "D", doExit ) ;
+        frame.setMenuItem ( "D", doStore ) ;
     }
 
         
@@ -88,4 +88,7 @@ public class AppController implements IApp
         frame.cmd( c ) ;
     }
     
+    public String screen() {
+        return frame.screen() ;
+    }
 }

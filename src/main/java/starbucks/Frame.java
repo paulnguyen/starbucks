@@ -13,6 +13,7 @@ public class Frame
     private IOrientationStrategy landscapeStrategy ;
     private IOrientationStrategy currentStrategy ;
         
+   public String screen() { return current.name() ; }
    public void landscape() { currentStrategy = landscapeStrategy ; }
    public void portrait()  { currentStrategy = portraitStrategy ; }  
     
@@ -24,7 +25,7 @@ public class Frame
         {
             public void display(IScreen s)
             {
-                System.out.println( "  " + s.getClass().getName() + "  " ) ;
+                System.out.println( "  " + s.name() + "  " ) ;
                 System.out.println( "================\n" ) ;
                 System.out.println( s.display() ) ;
                 System.out.println( "================\n" ) ;
@@ -40,7 +41,7 @@ public class Frame
         {
             public void display(IScreen s)
             {
-                System.out.println( "  " + s.getClass().getName() + "  " ) ;
+                System.out.println( "  " + s.name() + "  " ) ;
                 System.out.println( "================================\n" ) ;
                 System.out.println( s.display() ) ;
                 System.out.println( "================================\n" ) ;

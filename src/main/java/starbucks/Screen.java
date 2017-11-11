@@ -41,4 +41,8 @@ public class Screen implements IScreen, IDisplayComponent
         return value ; 
     }
 
+    public String name() {
+        return (this.getClass().getName()).split("\\.")[1] ; 
+    }
+
 }

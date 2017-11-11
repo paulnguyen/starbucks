@@ -12,7 +12,7 @@ public class FourPinDigits implements IPinState
     }
 
     public void backspace() {
-
+        machine.setStateThreePinDigits(null) ;
     }
 
     public void number( String digit ) {

@@ -29,6 +29,10 @@ public class PinEntryMachine implements IPinStateMachine, IKeyPadObserver, IPinA
 
     // pin captured so far
     private String d1, d2, d3, d4 ;
+    public String d1() { return d1 ; }
+    public String d2() { return d2 ; }
+    public String d3() { return d3 ; }
+    public String d4() { return d4 ; }
 
     public PinEntryMachine( )
     {
@@ -37,6 +41,10 @@ public class PinEntryMachine implements IPinStateMachine, IKeyPadObserver, IPinA
         pin2 = new TwoPinDigits( this ) ;
         pin3 = new ThreePinDigits( this ) ;
         pin4 = new FourPinDigits( this ) ;
+        this.d1 = "" ;
+        this.d2 = "" ;
+        this.d3 = "" ;
+        this.d4 = "" ;        
         this.state = pin0 ;
     }
 
@@ -73,8 +81,11 @@ public class PinEntryMachine implements IPinStateMachine, IKeyPadObserver, IPinA
         this.state = pin1 ;
         if ( digit != null )
             this.d1 = digit ;
-        else
+        else {
             this.d2 = "" ;
+            this.d3 = "" ;
+            this.d4 = "" ;
+        }
         debug() ;
     }
 
@@ -84,8 +95,10 @@ public class PinEntryMachine implements IPinStateMachine, IKeyPadObserver, IPinA
         this.state = pin2 ;
         if ( digit != null )
             this.d2 = digit ;
-        else
+        else {
             this.d3 = "" ;
+            this.d4 = "" ;
+        }
         debug() ;
     }
 
@@ -95,8 +108,9 @@ public class PinEntryMachine implements IPinStateMachine, IKeyPadObserver, IPinA
         this.state = pin3 ;
         if ( digit != null )
             this.d3 = digit ;
-        else
+        else {
             this.d4 = "" ;
+        }
         debug() ;
     }
 

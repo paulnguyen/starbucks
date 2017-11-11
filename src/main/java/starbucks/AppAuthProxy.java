@@ -67,11 +67,18 @@ public class AppAuthProxy implements IApp, IPinAuthObserver
         else
         {
             System.out.println( "----------------" ) ;            
-            System.out.println( "   " + ps.getClass().getName() + "  " ) ;
+            System.out.println( "   " + ps.name() + "  " ) ;
             System.out.println( "----------------\n" ) ;            
             System.out.println( ps.display() ) ;
             System.out.println( "----------------\n" ) ;            
         }
+    }
+
+    public String screen() {
+        if ( authenticated )
+            return app.screen() ;
+        else
+            return ps.name() ;
     }
 
     public void execute( String c )

@@ -44,6 +44,11 @@ public class KeyPad implements ITouchEventHandler, IDisplayComponent, IKeyPadSub
         }
     }
 
+    public String lastKey() { 
+        System.out.println( "Key Pressed: " + this.lastKey ) ;
+        return this.lastKey ; 
+    }
+
     private String getKey( int x, int y )
     {
         int kx = 0, ky = 0 ;
@@ -59,7 +64,7 @@ public class KeyPad implements ITouchEventHandler, IDisplayComponent, IKeyPadSub
             return Integer.toString(kx+3*(ky-1)) ;   
     }
 
-    /**
+    /*
     kx = 1, ky = 1  ==> 1
     kx = 1, ky = 2  ==> 4
     kx = 1, ky = 3  ==> 7
@@ -74,7 +79,7 @@ public class KeyPad implements ITouchEventHandler, IDisplayComponent, IKeyPadSub
 
     n = kx + 3 * (ky-1)
 
-     */
+    */
 
     public void setNext( ITouchEventHandler next) { 
         nextHandler = next ;
