@@ -42,7 +42,6 @@ public class PinEntryMachineTest
     @Test
     public void test0()
     {
-        PinEntryMachine pinEntry = new PinEntryMachine();
         pinEntry.number("1");
         pinEntry.backspace();
         System.out.println( pinEntry.getCurrentState() ) ;
@@ -54,7 +53,6 @@ public class PinEntryMachineTest
     @Test
     public void test1()
     {
-        PinEntryMachine pinEntry = new PinEntryMachine();
         pinEntry.number("1");
         assertEquals("starbucks.OnePinDigit", pinEntry.getCurrentState());
         pinEntry.number("2");
@@ -65,7 +63,6 @@ public class PinEntryMachineTest
     @Test
     public void test2()
     {
-        PinEntryMachine pinEntry = new PinEntryMachine();
         pinEntry.number("1");
         pinEntry.number("2");
         assertEquals("starbucks.TwoPinDigits", pinEntry.getCurrentState());
@@ -77,7 +74,6 @@ public class PinEntryMachineTest
     @Test
     public void test3()
     {
-        PinEntryMachine pinEntry = new PinEntryMachine();
         pinEntry.number("1");
         pinEntry.number("2");
         pinEntry.number("3");
@@ -87,7 +83,6 @@ public class PinEntryMachineTest
     @Test
     public void test4()
     {
-        PinEntryMachine pinEntry = new PinEntryMachine();
         pinEntry.number("1");
         pinEntry.number("2");
         pinEntry.number("3");
@@ -98,7 +93,6 @@ public class PinEntryMachineTest
     @Test
     public void test5()
     {
-        PinEntryMachine pinEntry = new PinEntryMachine();
         pinEntry.number("1");
         pinEntry.number("2");
         pinEntry.number("3");
