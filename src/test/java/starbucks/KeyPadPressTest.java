@@ -53,7 +53,8 @@ public class KeyPadPressTest
         // Press 2
 
         // Assertion (Replace with appropriate test)
-       assertTrue( false ) ;    }
+        assertTrue( false );
+    }
 
    @Test
     public void testThree()
@@ -61,7 +62,8 @@ public class KeyPadPressTest
         // Press 3
 
         // Assertion (Replace with appropriate test)
-       assertTrue( false ) ;    }
+        assertTrue( false );
+    }
 
    @Test
     public void testFour()
@@ -69,7 +71,8 @@ public class KeyPadPressTest
         // Press 4
 
         // Assertion (Replace with appropriate test)
-       assertTrue( false ) ;    }
+        assertTrue( false );
+    }
 
    @Test
     public void testFive()
@@ -77,7 +80,8 @@ public class KeyPadPressTest
         // Press 5
 
         // Assertion (Replace with appropriate test)
-       assertTrue( false ) ;    }
+        assertTrue( false );
+    }
 
    @Test
     public void testSix()
@@ -85,7 +89,8 @@ public class KeyPadPressTest
         // Press 6
 
         // Assertion (Replace with appropriate test)
-       assertTrue( false ) ;    }
+        assertTrue( false );
+    }
 
    @Test
     public void testSeven()
@@ -93,7 +98,8 @@ public class KeyPadPressTest
         // Press 7
 
         // Assertion (Replace with appropriate test)
-       assertTrue( false ) ;    }
+        assertTrue( false );
+    }
 
    @Test
     public void testEight()
@@ -101,7 +107,8 @@ public class KeyPadPressTest
         // Press 8
 
         // Assertion (Replace with appropriate test)
-       assertTrue( false ) ;    }
+        assertTrue( false );
+    }
 
    @Test
     public void testNine()
@@ -109,7 +116,8 @@ public class KeyPadPressTest
         // Press 9
 
         // Assertion (Replace with appropriate test)
-       assertTrue( false ) ;    }
+        assertTrue( false );
+    }
 
    @Test
     public void testZero()
@@ -117,7 +125,8 @@ public class KeyPadPressTest
         // Press 0
 
         // Assertion (Replace with appropriate test)
-       assertTrue( false ) ;    }
+        assertTrue( false );
+    }
 
    @Test
     public void testBackspace()
@@ -125,7 +134,8 @@ public class KeyPadPressTest
         // Press Backspace
 
         // Assertion (Replace with appropriate test)
-       assertTrue( false ) ;    }
+        assertTrue( false );
+    }
 
    @Test
     public void testNoKey()
@@ -133,7 +143,8 @@ public class KeyPadPressTest
         // Press Empty Key
 
         // Assertion (Replace with appropriate test)
-       assertTrue( false ) ;    }
+        assertTrue( false );
+    }
 
 
     
