@@ -10,7 +10,7 @@ import org.junit.Before;
 import org.junit.Test;
 
 /**
- * The test class PinEntryMachineTest.
+ * The test class ProxyPatternTest.
  *
  * @author  (your name)
  * @version (a version number or a date)
@@ -20,7 +20,7 @@ public class ProxyPatternTest
     IApp app ;
     
     /**
-     * Default constructor for test class PinEntryMachineTest
+     * Default constructor for test class ProxyPatternTest
      */
     public ProxyPatternTest()
     {

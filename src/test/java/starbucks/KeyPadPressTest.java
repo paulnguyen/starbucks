@@ -10,7 +10,7 @@ import org.junit.Before;
 import org.junit.Test;
 
 /**
- * The test class PinEntryMachineTest.
+ * The test class KeyPadPressTest.
  *
  * @author  (your name)
  * @version (a version number or a date)
@@ -20,7 +20,7 @@ public class KeyPadPressTest
     KeyPad kp ;
     
     /**
-     * Default constructor for test class PinEntryMachineTest
+     * Default constructor for test class KeyPadPressTest
      */
     public KeyPadPressTest()
     {

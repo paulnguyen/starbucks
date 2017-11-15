@@ -9,7 +9,7 @@ import org.junit.Before;
 import org.junit.Test;
 
 /**
- * The test class PinEntryMachineTest.
+ * The test class StrategyPatternTest.
  *
  * @author  (your name)
  * @version (a version number or a date)
@@ -19,7 +19,7 @@ public class StrategyPatternTest
     IApp app ;
     
     /**
-     * Default constructor for test class PinEntryMachineTest
+     * Default constructor for test class StrategyPatternTest
      */
     public StrategyPatternTest()
     {
