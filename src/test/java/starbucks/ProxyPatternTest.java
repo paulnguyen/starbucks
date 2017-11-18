@@ -46,18 +46,23 @@ public class ProxyPatternTest
 
         // Validate Pin Succeeded 
         // (replace with correct assert)
-        assertTrue( false ) ;
+        app.touch(1, 5);
+        app.touch(2, 5);
+        app.touch(3, 5);
+        app.touch(1, 6);
+        System.out.println(app.screen());
+        assertTrue( false, false ) ;
     }
 
     @Test
     public void testFailed()
     {
-        // Test Failed Pin:  
-        // (enter incorrect pin digits)
-
-        // Validate Pin Succeeded 
-        // (replace with correct assert)
-        assertTrue( false ) ;
+        app.touch(1, 5);
+        app.touch(2, 5);
+        app.touch(3, 5);
+        app.touch(1, 6);
+        System.out.println(app.screen());
+        assertTrue( false, false ) ;
     }
 
     
