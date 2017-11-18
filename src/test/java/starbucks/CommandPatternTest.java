@@ -42,9 +42,9 @@ public class CommandPatternTest
     public void testMyCards()
     {
         // Login with pin
-
+        
         // Select Menu "A"
- 
+        app.execute("A");
         // Assertion
         assertEquals("MyCards", app.screen());            
     }
@@ -76,7 +76,7 @@ public class CommandPatternTest
     public void testStore()
     {
         // Login with pin
-
+        
         // Select Menu "D"
  
         // Assertion 
