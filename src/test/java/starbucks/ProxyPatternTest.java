@@ -46,6 +46,7 @@ public class ProxyPatternTest
 
         // Validate Pin Succeeded 
         // (replace with correct assert)
+        app.authEvent() ; 
         assertTrue( false ) ;
     }
 
