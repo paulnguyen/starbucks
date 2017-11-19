@@ -1,5 +1,6 @@
 
 
+
 package starbucks ;
 
 
@@ -40,25 +41,31 @@ public class StrategyPatternTest
     @Test
     public void testLandscape()
     {
-        // Login to App
-
-        // Put in Landscape Mode   
-
-        // Validate App is in Landscape Mode 
-        // (replace with correct assert)
-        assertTrue( false ) ;     
+        assertEquals("PinScreen", app.screen());
+        app.touch(1,5) ;
+        app.touch(2,5) ;
+        app.touch(3,5) ;
+        app.touch(1,6) ;
+        assertEquals("MyCards", app.screen());
+        app.landscape();
+        assertEquals("MyCards", app.screen());
+        app.execute( "B" ) ;  
+        assertEquals("MyCards", app.screen());         
     }
 
     @Test
     public void testPortrait()
     {
-        // Login to App
-
-        // Put in Portrait Mode   
-
-        // Validate App is in Landscape Mode 
-        // (replace with correct assert)
-        assertTrue( false ) ;       
+        assertEquals("PinScreen", app.screen());
+        app.touch(1,5) ;
+        app.touch(2,5) ;
+        app.touch(3,5) ;
+        app.touch(1,6) ;
+        assertEquals("MyCards", app.screen());
+        app.portrait();
+        assertEquals("MyCards", app.screen());
+        app.execute( "B" ) ;  
+        assertEquals("Payments", app.screen());         
     }
 
     

@@ -41,22 +41,34 @@ public class CommandPatternTest
     @Test
     public void testMyCards()
     {
-        // Login with pin
-
-        // Select Menu "A"
- 
-        // Assertion
+        assertEquals("PinScreen", app.screen());
+        app.touch(1,5) ;
+        app.touch(2,5) ;
+        app.touch(3,5) ;
+        app.touch(1,6) ;
+        assertEquals("MyCards", app.screen());
+        app.execute( "A" ) ;
+        app.execute( "B" ) ;
+        app.execute( "C" ) ;  
+        app.execute( "D" ) ;
+        app.execute( "A" ) ;  
         assertEquals("MyCards", app.screen());            
     }
 
     @Test
     public void testPayments()
     {
-        // Login with pin
-
-        // Select Menu "B"
- 
-        // Assertion
+        assertEquals("PinScreen", app.screen());
+        app.touch(1,5) ;
+        app.touch(2,5) ;
+        app.touch(3,5) ;
+        app.touch(1,6) ;
+        assertEquals("MyCards", app.screen());
+        app.execute( "A" ) ;
+        app.execute( "B" ) ;
+        app.execute( "C" ) ;  
+        app.execute( "D" ) ;
+        app.execute( "B" ) ;  
         assertEquals("Payments", app.screen());            
     }
 
@@ -64,22 +76,33 @@ public class CommandPatternTest
     public void testRewards()
     {
         assertEquals("PinScreen", app.screen());
-        // Login with pin
-
-        // Select Menu "C"
- 
-        // Assertion 
+        app.touch(1,5) ;
+        app.touch(2,5) ;
+        app.touch(3,5) ;
+        app.touch(1,6) ;
+        assertEquals("MyCards", app.screen());
+        app.execute( "A" ) ;
+        app.execute( "B" ) ;
+        app.execute( "C" ) ;  
+        app.execute( "D" ) ;
+        app.execute( "C" ) ;  
         assertEquals("Rewards", app.screen());            
     }
 
   @Test
     public void testStore()
     {
-        // Login with pin
-
-        // Select Menu "D"
- 
-        // Assertion 
+        assertEquals("PinScreen", app.screen());
+        app.touch(1,5) ;
+        app.touch(2,5) ;
+        app.touch(3,5) ;
+        app.touch(1,6) ;
+        assertEquals("MyCards", app.screen());
+        app.execute( "A" ) ;
+        app.execute( "B" ) ;
+        app.execute( "C" ) ;  
+        app.execute( "D" ) ;
+        app.execute( "D" ) ;  
         assertEquals("Store", app.screen());            
     }
 

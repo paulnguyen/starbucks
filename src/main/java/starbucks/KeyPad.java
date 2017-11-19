@@ -75,7 +75,7 @@ public class KeyPad implements ITouchEventHandler, IDisplayComponent, IKeyPadSub
 
     kx = 3, ky = 1  ==> 3
     kx = 3, ky = 2  ==> 6
-    kx = 4, ky = 3  ==> 9
+    kx = 3, ky = 3  ==> 9
 
     n = kx + 3 * (ky-1)
 
