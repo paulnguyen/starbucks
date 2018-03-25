@@ -13,6 +13,7 @@ public class Frame implements IFrame
     private IOrientationStrategy currentStrategy ;
 
     public String screen() { return current.name() ; }
+    public String contents() { return current.display() ; }
 
     public void landscape() { currentStrategy = landscapeStrategy ; }
 

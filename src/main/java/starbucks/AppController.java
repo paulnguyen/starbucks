@@ -99,4 +99,8 @@ public class AppController implements IApp
     public String screen() {
         return frame.screen() ;
     }
+    
+    public String screenContents() {
+        return frame.contents() ;
+    }
 }

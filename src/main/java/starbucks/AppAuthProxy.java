@@ -74,6 +74,13 @@ public class AppAuthProxy implements IApp, IPinAuthObserver
         else
             return ps.name() ;
     }
+    
+    public String screenContents() {
+         if ( authenticated )
+            return app.screenContents() ;
+        else
+            return ps.display() ;
+    }
 
     public void execute( String c )
     {

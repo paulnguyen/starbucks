@@ -9,6 +9,7 @@ public interface IFrame
     void previousScreen() ;
     void nextScreen() ;
     String screen() ;
+    String contents() ;
     void display() ;
     void landscape() ;
     void portrait() ;
