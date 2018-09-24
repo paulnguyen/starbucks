@@ -31,4 +31,4 @@ Grader results are posted in the following files:
 
 You can also configure your GitHub Repo to automatically submit a Grader request upon a commit to your *master* branch.  Set this up as follows:
 
-![GitHub Webhook](./images/github-webhook.png)
+![GitHub Webhook](./images/github-webhook-settings.png)
