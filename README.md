@@ -14,10 +14,18 @@ Type in your *repo* name and click "submit".  I.E. cmpe202-teststudent.  It may 
 
 The Grader will post a message once your test results are ready.  The message will be in the *#starbucks* channel.  An example message looks like:
 
-```
+<pre>
 Starbucks APP [8:50 PM]
 Tests: 72% - Comments:  0 - Bugs: 8 - Smells: 22 - http://sjsu.nguyenresearch.com/grader/cmpe202-teststudent
-```
+</pre>
+
+## Grader Test Results
+
+Grader results are posted in the following files:
+
+* tests.html
+* bugs.html
+* codesmells.txt
 
 ## Setting Up a GitHub Webhook
 
