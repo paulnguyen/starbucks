@@ -31,4 +31,9 @@ Grader results are posted in the following files:
 
 You can also configure your GitHub Repo to automatically submit a Grader request upon a commit to your *master* branch.  Set this up as follows:
 
+* Webhook URL:  http://sjsu.nguyenresearch.com/cgi-bin/github.cgi
+* Content Type: application/json
+* Event Trigger: push 
+
+
 ![GitHub Webhook](./images/github-webhook-settings.png)
