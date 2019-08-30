@@ -27,6 +27,6 @@ spotbugs:
 codesmells:
 	gradle smartsmells
 
-run: 
+run: jar
 	java -cp build/libs/starbucks-all.jar starbucks.Main 2>debug.log
 

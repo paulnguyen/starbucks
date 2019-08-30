@@ -23,7 +23,8 @@ final class Main {
      */
     public static void main(final String[] args) {
         System.err.println( "Args: " + args ) ;
-        IApp app = new AppAuthProxy() ;
+        Device d = Device.getInstance() ;
+        IApp app = (IApp) d ;
         Console c = System.console();
         String msg = "" ;
         for (;;) {

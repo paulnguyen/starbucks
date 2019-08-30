@@ -20,14 +20,14 @@ public class PaymentsTest
     @Before
     public void setUp()
     {
-        app = new AppAuthProxy() ;
+        app = (IApp) Device.getNewInstance() ;
     }
 
     @Test
     public void PaymentsTest1()
     {
         String[] lines ;
-        assertEquals("PinScreen", app.screen());
+        assertEquals("", app.screen());
         app.touch(1,5) ;
         app.touch(2,5) ;
         app.touch(3,5) ;
@@ -35,7 +35,7 @@ public class PaymentsTest
         app.execute("E") ; // Settings Page
         assertEquals("Settings", app.screen());
         app.touch(1,1) ; // Add New Card
-        assertEquals("AddCard", app.screen());
+        assertEquals("Add Card", app.screen());
         // Card Id digits
         app.touch(1,5); 
         app.touch(2,5);
@@ -57,7 +57,7 @@ public class PaymentsTest
         assertEquals("[999]", lines[5].trim());
         // add card - see balance
         app.next() ;    
-        assertEquals("MyCards", app.screen());
+        assertEquals("My Cards", app.screen());
         lines = app.screenContents().split("\n");  
         assertEquals("$20.00", lines[7].trim());    
         // switch to payment

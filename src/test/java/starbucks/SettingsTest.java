@@ -18,12 +18,12 @@ public class SettingsTest
     @Before
     public void setUp()
     {
-        app = new AppAuthProxy() ;
+        app = (IApp) Device.getNewInstance() ;
     }
 
     @Test
     public void SettingsTest1() {
-        assertEquals("PinScreen", app.screen());
+        assertEquals("", app.screen());
         app.touch(1,5) ;
         app.touch(2,5) ;
         app.touch(3,5) ;
@@ -31,18 +31,19 @@ public class SettingsTest
         app.execute("E") ; // Settings Page
         assertEquals("Settings", app.screen());
         app.touch(1,1) ; // Add New Card
-        assertEquals("AddCard", app.screen());
+        assertEquals("Add Card", app.screen());
         app.prev() ;
         assertEquals("Settings", app.screen());
         app.touch(2,1) ; // Add New Card
-        assertEquals("AddCard", app.screen());
+        assertEquals("Add Card", app.screen());
         app.prev() ;
         assertEquals("Settings", app.screen());
         app.touch(3,1) ; // Add New Card
-        assertEquals("AddCard", app.screen());
+        assertEquals("Add Card", app.screen());
         app.prev() ;
         assertEquals("Settings", app.screen());   
     }
+
     
     @After
     public void tearDown()

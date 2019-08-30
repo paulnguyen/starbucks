@@ -26,58 +26,60 @@ public class AppProxyTest
     @Before
     public void setUp()
     {
-        app = new AppAuthProxy() ;
+       app = (IApp) Device.getNewInstance() ;
     }
 
 
     @Test
     public void ProxyPatternTest1()
     {
-        assertEquals("PinScreen", app.screen());
+        assertEquals("", app.screen());
         app.touch(1,5) ;
         app.touch(2,5) ;
         app.touch(3,5) ;
         app.touch(1,6) ;
-        assertEquals("MyCards", app.screen());
+        assertEquals("My Cards", app.screen());
     }
 
     @Test
     public void ProxyPatternTest2()
     {
-        assertEquals("PinScreen", app.screen());
+        assertEquals("", app.screen());
         app.touch(1,5) ;
         app.touch(2,5) ;
         app.touch(3,5) ;
         app.touch(2,6) ;
-        assertEquals("PinScreen", app.screen());
+        assertEquals("", app.screen());
     }
+
+    
     
     @Test
     public void CommandPatternTest1()
     {
-        assertEquals("PinScreen", app.screen());
+        assertEquals("", app.screen());
         app.touch(1,5) ;
         app.touch(2,5) ;
         app.touch(3,5) ;
         app.touch(1,6) ;
-        assertEquals("MyCards", app.screen());
+        assertEquals("My Cards", app.screen());
         app.execute( "A" ) ;
         app.execute( "B" ) ;
         app.execute( "C" ) ;  
         app.execute( "D" ) ;
         app.execute( "A" ) ;  
-        assertEquals("MyCards", app.screen());            
+        assertEquals("My Cards", app.screen());            
     }
 
     @Test
     public void CommandPatternTest2()
     {
-        assertEquals("PinScreen", app.screen());
+        assertEquals("", app.screen());
         app.touch(1,5) ;
         app.touch(2,5) ;
         app.touch(3,5) ;
         app.touch(1,6) ;
-        assertEquals("MyCards", app.screen());
+        assertEquals("My Cards", app.screen());
         app.execute( "A" ) ;
         app.execute( "B" ) ;
         app.execute( "C" ) ;  
@@ -89,12 +91,12 @@ public class AppProxyTest
   @Test
     public void CommandPatternTest3()
     {
-        assertEquals("PinScreen", app.screen());
+        assertEquals("", app.screen());
         app.touch(1,5) ;
         app.touch(2,5) ;
         app.touch(3,5) ;
         app.touch(1,6) ;
-        assertEquals("MyCards", app.screen());
+        assertEquals("My Cards", app.screen());
         app.execute( "A" ) ;
         app.execute( "B" ) ;
         app.execute( "C" ) ;  
@@ -106,18 +108,18 @@ public class AppProxyTest
   @Test
     public void CommandPatternTest4()
     {
-        assertEquals("PinScreen", app.screen());
+        assertEquals("", app.screen());
         app.touch(1,5) ;
         app.touch(2,5) ;
         app.touch(3,5) ;
         app.touch(1,6) ;
-        assertEquals("MyCards", app.screen());
+        assertEquals("My Cards", app.screen());
         app.execute( "A" ) ;
         app.execute( "B" ) ;
         app.execute( "C" ) ;  
         app.execute( "D" ) ;
         app.execute( "D" ) ;  
-        assertEquals("Store", app.screen());            
+        assertEquals("Find Store", app.screen());            
     }
 
     

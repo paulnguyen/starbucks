@@ -18,7 +18,7 @@ public class MenuTest
     @Before
     public void setUp()
     {
-         app = new AppAuthProxy() ;
+         app = (IApp) Device.getNewInstance() ;
     }
 
     @After
@@ -30,12 +30,12 @@ public class MenuTest
     public void MenuTestTest1()
     {
         String[] lines ;
-        assertEquals("PinScreen", app.screen());
+        assertEquals("", app.screen());
         app.touch(1,5) ;  // 1
         app.touch(2,5) ;  // 2
         app.touch(3,5) ;  // 3
         app.touch(1,6) ;  // 4
-        assertEquals("MyCards", app.screen());
+        assertEquals("My Cards", app.screen());
         lines = app.screenContents().split("\n"); 
         assertEquals("$0.00", lines[7].trim());
         app.display() ;
@@ -51,12 +51,12 @@ public class MenuTest
     public void MenuTestTest2()
     {
         String[] lines ;
-        assertEquals("PinScreen", app.screen());
+        assertEquals("", app.screen());
         app.touch(1,5) ;  // 1
         app.touch(2,5) ;  // 2
         app.touch(3,5) ;  // 3
         app.touch(1,6) ;  // 4
-        assertEquals("MyCards", app.screen());
+        assertEquals("My Cards", app.screen());
         lines = app.screenContents().split("\n"); 
         assertEquals("$0.00", lines[7].trim());
         app.display() ;
@@ -67,6 +67,7 @@ public class MenuTest
         assertEquals("Visit Count", lines[8].trim());  
         app.display() ;
     }  
+    
     
    
     

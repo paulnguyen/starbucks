@@ -19,20 +19,19 @@ public class PasscodeTest
     @Before
     public void setUp()
     {
-        app = new AppAuthProxy() ;  
+        app = (IApp) Device.getNewInstance() ;
     }
 
     @Test
     public void PasscodeTest1()
     {
-        assertEquals("PinScreen", app.screen());
+        assertEquals("", app.screen());
         app.touch(1,5) ;
         app.touch(2,5) ;
         app.touch(3,5) ;
         app.touch(1,6) ;
-        assertEquals("MyCards", app.screen());
+        assertEquals("My Cards", app.screen());
     }    
-
 
     @After
     public void tearDown()
