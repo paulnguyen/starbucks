@@ -33,23 +33,23 @@ public class AppProxyTest
     @Test
     public void ProxyPatternTest1()
     {
-        assertEquals("", app.screen());
+        assertEquals("", app.screen().trim());
         app.touch(1,5) ;
         app.touch(2,5) ;
         app.touch(3,5) ;
         app.touch(1,6) ;
-        assertEquals("My Cards", app.screen());
+        assertEquals("My Cards", app.screen().trim());
     }
 
     @Test
     public void ProxyPatternTest2()
     {
-        assertEquals("", app.screen());
+        assertEquals("", app.screen().trim());
         app.touch(1,5) ;
         app.touch(2,5) ;
         app.touch(3,5) ;
         app.touch(2,6) ;
-        assertEquals("", app.screen());
+        assertEquals("", app.screen().trim());
     }
 
     
@@ -57,69 +57,69 @@ public class AppProxyTest
     @Test
     public void CommandPatternTest1()
     {
-        assertEquals("", app.screen());
+        assertEquals("", app.screen().trim());
         app.touch(1,5) ;
         app.touch(2,5) ;
         app.touch(3,5) ;
         app.touch(1,6) ;
-        assertEquals("My Cards", app.screen());
+        assertEquals("My Cards", app.screen().trim());
         app.execute( "A" ) ;
         app.execute( "B" ) ;
         app.execute( "C" ) ;  
         app.execute( "D" ) ;
         app.execute( "A" ) ;  
-        assertEquals("My Cards", app.screen());            
+        assertEquals("My Cards", app.screen().trim());            
     }
 
     @Test
     public void CommandPatternTest2()
     {
-        assertEquals("", app.screen());
+        assertEquals("", app.screen().trim());
         app.touch(1,5) ;
         app.touch(2,5) ;
         app.touch(3,5) ;
         app.touch(1,6) ;
-        assertEquals("My Cards", app.screen());
+        assertEquals("My Cards", app.screen().trim());
         app.execute( "A" ) ;
         app.execute( "B" ) ;
         app.execute( "C" ) ;  
         app.execute( "D" ) ;
         app.execute( "B" ) ;  
-        assertEquals("Payments", app.screen());            
+        assertEquals("Payments", app.screen().trim());            
     }
 
   @Test
     public void CommandPatternTest3()
     {
-        assertEquals("", app.screen());
+        assertEquals("", app.screen().trim());
         app.touch(1,5) ;
         app.touch(2,5) ;
         app.touch(3,5) ;
         app.touch(1,6) ;
-        assertEquals("My Cards", app.screen());
+        assertEquals("My Cards", app.screen().trim());
         app.execute( "A" ) ;
         app.execute( "B" ) ;
         app.execute( "C" ) ;  
         app.execute( "D" ) ;
         app.execute( "C" ) ;  
-        assertEquals("Rewards", app.screen());            
+        assertEquals("Rewards", app.screen().trim());            
     }
 
   @Test
     public void CommandPatternTest4()
     {
-        assertEquals("", app.screen());
+        assertEquals("", app.screen().trim());
         app.touch(1,5) ;
         app.touch(2,5) ;
         app.touch(3,5) ;
         app.touch(1,6) ;
-        assertEquals("My Cards", app.screen());
+        assertEquals("My Cards", app.screen().trim());
         app.execute( "A" ) ;
         app.execute( "B" ) ;
         app.execute( "C" ) ;  
         app.execute( "D" ) ;
         app.execute( "D" ) ;  
-        assertEquals("Find Store", app.screen());            
+        assertEquals("Find Store", app.screen().trim());            
     }
 
     

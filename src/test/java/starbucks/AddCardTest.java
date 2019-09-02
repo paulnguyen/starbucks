@@ -26,15 +26,15 @@ public class AddCardTest
     public void AddCardTest1()
     {
         String[] lines ;
-        assertEquals("", app.screen());
+        assertEquals("", app.screen().trim());
         app.touch(1,5) ;
         app.touch(2,5) ;
         app.touch(3,5) ;
         app.touch(1,6) ;
         app.execute("E") ; // Settings Page
-        assertEquals("Settings", app.screen());
+        assertEquals("Settings", app.screen().trim());
         app.touch(1,1) ; // Add New Card
-        assertEquals("Add Card", app.screen());
+        assertEquals("Add Card", app.screen().trim());
         // Card Id digits
         app.touch(1,5); // 1
         app.touch(2,5); // 2
@@ -58,24 +58,24 @@ public class AddCardTest
         // add card - see balance
         app.next() ;    
         app.display() ;
-        assertEquals("My Cards", app.screen());
+        assertEquals("My Cards", app.screen().trim());
         lines = app.screenContents().split("\n");  
-        assertEquals("$20.00", lines[7]);       
+        assertEquals("$20.00", lines[7].trim());       
     }
 
     @Test
     public void AddCardTest2()
     {
         String[] lines ;
-        assertEquals("", app.screen());
+        assertEquals("", app.screen().trim());
         app.touch(1,5) ;
         app.touch(2,5) ;
         app.touch(3,5) ;
         app.touch(1,6) ;
         app.execute("E") ; // Settings Page
-        assertEquals("Settings", app.screen());
+        assertEquals("Settings", app.screen().trim());
         app.touch(1,1) ; // Add New Card
-        assertEquals("Add Card", app.screen());
+        assertEquals("Add Card", app.screen().trim());
         // Card Id digits
         app.touch(1,5); // 1
         app.touch(2,6); // 5

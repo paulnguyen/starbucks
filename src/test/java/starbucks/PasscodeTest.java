@@ -22,15 +22,15 @@ public class PasscodeTest
         app = (IApp) Device.getNewInstance() ;
     }
 
-    @Test
+   @Test
     public void PasscodeTest1()
     {
-        assertEquals("", app.screen());
+        assertEquals("", app.screen().trim());
         app.touch(1,5) ;
         app.touch(2,5) ;
         app.touch(3,5) ;
         app.touch(1,6) ;
-        assertEquals("My Cards", app.screen());
+        assertEquals("My Cards", app.screen().trim());
     }    
 
     @After

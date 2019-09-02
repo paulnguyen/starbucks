@@ -20,18 +20,44 @@ public class Device implements IApp, IPinAuthObserver {
     private boolean authenticated = false ;
     private PinEntryMachine pm ;
 
+    public static final int screen_frame_header = 3 ;
+    public static final int portrait_screen_width = 15 ;
+    public static final int portrait_screen_length = 10 ;
+    public static final int landscape_screen_width = 32 ;
+    public static final int landscape_screen_length = 6 ;
+
+    public enum ORIENTATION_MODE {
+        PORTRAIT, LANDSCAPE
+    }
+
+    private ORIENTATION_MODE device_orientation_state ;
+
+    public ORIENTATION_MODE getDeviceOrientation() {
+        return this.device_orientation_state ;
+    }
+
+    public void setPortraitOrientation() {
+        this.device_orientation_state = ORIENTATION_MODE.PORTRAIT ;
+    }
+
+    public void setLandscapeOrientation() {
+        this.device_orientation_state = ORIENTATION_MODE.LANDSCAPE ;
+    }
+
     private Device() { }
 
     /** Debug Device State */
     public static void debug()
     {
         Device d = Device.getInstance() ;
-        System.err.println( "==================================" ) ;
-        System.err.println( "Device State: " ) ;
+        System.err.println( "============================================" ) ;
+        System.err.println( "--------- D E V I C E  S T A T E  ----------" ) ;
+        System.err.println( "============================================" ) ;
         System.err.println( "Pin Option    = " + d.getPinOption() ) ;
         System.err.println( "Stored Pin    = " + d.getPin() ) ;
         System.err.println( "Authenticated = " + d.isAuthenticated() ) ;
-        System.err.println( "==================================" ) ;
+        System.err.println( "Orientation   = " + d.getDeviceOrientation() ) ;
+        System.err.println( "============================================" ) ;
     }
 
     /**
@@ -152,6 +178,9 @@ public class Device implements IApp, IPinAuthObserver {
 
         // get app controller reference
         app = new AppController() ;        
+
+        // startup in portrait
+        this.device_orientation_state = ORIENTATION_MODE.PORTRAIT ;
     }
 
     /**
