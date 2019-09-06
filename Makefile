@@ -3,7 +3,7 @@ all: clean
 clean: 
 	find . -name "*.class" -exec rm -rf {} \;
 	rm -rf build/*
-	rm *.log
+	rm -f *.log
 
 
 # Gradle: 		https://guides.gradle.org/creating-new-gradle-builds/

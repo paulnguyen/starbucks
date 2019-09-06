@@ -45,11 +45,11 @@ public class Passcode implements ITouchEventHandler, IDisplayComponent, IKeyPadO
         String value = "" ;
         switch ( count )
         {
-            case 0: value = " [_][_][_][_]" ; break ;
-            case 1: value = " [*][_][_][_]" ; break ;
-            case 2: value = " [*][*][_][_]" ; break ;
-            case 3: value = " [*][*][*][_]" ; break ;
-            case 4: value = " [*][*][*][*]" ; break ;
+            case 0: value = "  [_][_][_][_]" ; break ;
+            case 1: value = "  [*][_][_][_]" ; break ;
+            case 2: value = "  [*][*][_][_]" ; break ;
+            case 3: value = "  [*][*][*][_]" ; break ;
+            case 4: value = "  [*][*][*][*]" ; break ;
         }
          return value  ;
     }
