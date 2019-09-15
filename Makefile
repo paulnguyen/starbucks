@@ -2,8 +2,10 @@ all: clean
 
 clean: 
 	find . -name "*.class" -exec rm -rf {} \;
+	find . -name .DS_Store -exec rm -rf {} \;
 	rm -rf build/*
 	rm -f *.log
+	rm -rf .gradle
 
 
 # Gradle: 		https://guides.gradle.org/creating-new-gradle-builds/
@@ -18,7 +20,7 @@ compile:
 test:
 	gradle test
 
-jar: compile
+build: compile
 	gradle shadowJar
 
 spotbugs:
@@ -27,6 +29,6 @@ spotbugs:
 codesmells:
 	gradle smartsmells
 
-run: jar
+run: build
 	java -cp build/libs/starbucks-all.jar starbucks.Main 2>debug.log
 
