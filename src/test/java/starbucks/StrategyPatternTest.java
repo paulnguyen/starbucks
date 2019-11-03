@@ -105,16 +105,12 @@ public class StrategyPatternTest
         app.touch(2,4) ;  
         assertEquals("My Cards", app.screen().trim());
         lines = app.screenContents().split("\n");  
-        assertEquals("Reload",          lines[4].trim()); 
-        assertEquals("Refresh",         lines[5].trim()); 
-        assertEquals("More Options",    lines[6].trim()); 
-        assertEquals("Cancel",          lines[7].trim()); 
+        assertEquals("$0.00", lines[5].trim());        
         app.touch(1, 7) ;
         assertEquals("My Cards", app.screen().trim());
         app.execute( "E" ) ;  
         assertEquals("My Cards", app.screen().trim());        
-    }             
-    
+    } 
 
     @After
     public void tearDown()
