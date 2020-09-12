@@ -3,7 +3,7 @@ all: clean
 clean: 
 	find . -name "*.class" -exec rm -rf {} \;
 	find . -name .DS_Store -exec rm -rf {} \;
-	rm -rf build/*
+	rm -rf build
 	rm -f *.log
 	rm -rf .gradle
 
