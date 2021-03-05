@@ -1,4 +1,4 @@
-FROM golang:latest 
+FROM golang:1.11 
 EXPOSE 3000
 RUN mkdir /app 
 ADD . /app/ 
