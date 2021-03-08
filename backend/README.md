@@ -141,7 +141,7 @@ docker run --network starbucks --name starbucks-nodejs -p 8080:8080  -e "api_end
 
 # Reference
 
-* http://unirest.io/java.html 
+* http://kong.github.io/unirest-java
 * https://www.baeldung.com/unirest
 * http://stleary.github.io/JSON-java/index.html
 * https://www.programcreek.com/java-api-examples/?api=com.mashape.unirest.http.Unirest
