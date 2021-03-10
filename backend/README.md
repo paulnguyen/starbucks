@@ -12,7 +12,6 @@ The API Specification is as follows.
 The Starbucks API Specification is as follows:
 
 ```
-
 GET 	/ping
 		Ping Health Check.
 
@@ -51,7 +50,7 @@ POST 	/cards
 		  "Status": "New Card."
 		}
 
-GET 	/cards/{num}
+GET 	/card/{num}
 		Get the details of a specific Starbucks Card.
 
 		{
@@ -151,6 +150,7 @@ DELETE 	/orders
 		{
 		  "Status": "All Orders Cleared!"
 		}
+
 ```
 
 ## Explore the Sample Node.js and Java Mobile App Simulator

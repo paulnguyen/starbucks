@@ -32,7 +32,6 @@ codesmells:
 run: build
 	java -cp build/libs/starbucks-all.jar starbucks.Main 2>debug.log
 
-
 network:
 	docker network create --driver bridge starbucks
 
@@ -42,4 +41,3 @@ backend:
 cashier:
 	docker run --network starbucks --name starbucks-nodejs -p 8080:8080  \
 	-e "api_endpoint=http://starbucks-api:3000" -td paulnguyen/starbucks-nodejs:v1.0
-
