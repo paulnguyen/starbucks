@@ -4,6 +4,7 @@ clean:
 	find . -name "*.class" -exec rm -rf {} \;
 	find . -name .DS_Store -exec rm -rf {} \;
 	rm -rf build/*
+	rm -rf  smells
 	rm -f *.log
 	rm -rf .gradle
 
@@ -27,7 +28,10 @@ spotbugs:
 	gradle spotbugsMain
 
 codesmells:
-	gradle smartsmells
+	java -jar DesigniteJava.jar -i src/main -o smells
+
+designite:
+	cp DesigniteJava.config .config	
 
 run: build
 	java -cp build/libs/starbucks-all.jar starbucks.Main 2>debug.log
@@ -41,3 +45,4 @@ starbucks-api:
 starbucks-cashier:
 	docker run --network starbucks --name starbucks-nodejs -p 8080:8080  \
 	-e "api_endpoint=http://starbucks-api:3000" -td paulnguyen/starbucks-nodejs:v1.0
+
