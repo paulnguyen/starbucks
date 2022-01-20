@@ -79,31 +79,6 @@ tasks.withType(com.github.spotbugs.SpotBugsTask) {
       }
 }
 
-/* Smart Smells Configuration */
-
-repositories {
-    maven {
-        url  "http://dl.bintray.com/arturbosch/code-analysis"
-    }
-}
-
-configurations {
-    smartsmells
-}
-
-task smartsmells(type: JavaExec) {
-    main = "io.gitlab.arturbosch.smartsmells.Main"
-    classpath = configurations.smartsmells
-    def input = "$project.projectDir.absolutePath/src/main"
-    def baseDir = "$project.projectDir/build/reports/"
-    def output = "$baseDir/smells/smartsmells.xml"
-    def params = [ '-i', input, '-o', output, '-fs', '-f', ".*/test/.*"]
-    args(params)
-}
-
-dependencies {
-    smartsmells 'io.gitlab.arturbosch.smartsmells:SmartSmells:1.0.0.RC8'
-}
 
 
 
