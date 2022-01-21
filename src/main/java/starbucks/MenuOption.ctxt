@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.target=MenuOption
+comment0.text=Menu\ Option
+comment1.params=c
+comment1.target=void\ setCommand(IMenuCommand)
+comment1.text=\n\ Set\ Command\ for\ Menu\ Option\n\ @param\ c\ [description]\n
+comment2.params=
+comment2.target=void\ invoke()
+comment2.text=Invoke\ Menu\ Option
+numComments=3

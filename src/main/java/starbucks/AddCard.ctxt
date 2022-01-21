@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=AddCard
+comment0.text=\n\ Add\ New\ Card\ Screen\n
+comment1.params=
+comment1.target=AddCard()
+comment2.params=
+comment2.target=void\ next()
+comment2.text=\n\ Frame\ Next\ Screen\n
+numComments=3

@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.target=IKeyPadObserver
+comment0.text=\n\ Key\ Pad\ Observer\ Interface\n
+comment1.params=numKeys\ key
+comment1.target=void\ keyEventUpdate(int,\ java.lang.String)
+comment1.text=\n\ Key\ Event\ to\ Notify\ Observers\ \n\ @param\ numKeys\ Number\ of\ Digits\ So\ Far\n\ @param\ key\ \ \ \ \ Key/Digit\ Pressed\n
+numComments=2

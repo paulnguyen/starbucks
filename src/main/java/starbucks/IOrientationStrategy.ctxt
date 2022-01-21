@@ -1,0 +1,25 @@
+#BlueJ class context
+comment0.target=IOrientationStrategy
+comment0.text=Orientation\ Strategy\ Interface
+comment1.params=s
+comment1.target=void\ display(IScreen)
+comment1.text=\n\ Display\ Screen\ (with\ respect\ to\ this\ Strategy)\n\ @param\ s\ Screen\ to\ Display\n
+comment2.params=s
+comment2.target=java.lang.String\ contents(IScreen)
+comment2.text=\n\ Get\ Screen\ Contents\ (instead\ of\ display\ to\ terminal)\n\ @param\ \ s\ Screen\ to\ get\ Contents\n\ @return\ \ \ Contents\ of\ Screen\n
+comment3.params=
+comment3.target=void\ selectA()
+comment3.text=Select\ A\ Menu\ Option
+comment4.params=
+comment4.target=void\ selectB()
+comment4.text=Select\ B\ Menu\ Option
+comment5.params=
+comment5.target=void\ selectC()
+comment5.text=Select\ C\ Menu\ Option
+comment6.params=
+comment6.target=void\ selectD()
+comment6.text=Select\ D\ Menu\ Option
+comment7.params=
+comment7.target=void\ selectE()
+comment7.text=Select\ E\ Menu\ Option
+numComments=8

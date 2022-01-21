@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=IPinAuthSubject
+comment0.text=Pin\ Authentication\ Subject
+comment1.params=obj
+comment1.target=void\ registerObserver(IPinAuthObserver)
+comment1.text=\n\ Add\ a\ Pin\ Auth\ Observer\n\ @param\ obj\ Observer\ Object\n
+comment2.params=obj
+comment2.target=void\ removeObserver(IPinAuthObserver)
+comment2.text=\n\ Remove\ Observer\n\ @param\ obj\ Pin\ AUth\ Observer\ to\ Remove\n
+comment3.params=
+comment3.target=void\ notifyObserver()
+comment3.text=\n\ Broadcast\ Event\ to\ Observers\n
+numComments=4

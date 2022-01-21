@@ -1,0 +1,22 @@
+#BlueJ class context
+comment0.target=Card
+comment0.text=\n\ Card\ Class\ for\ Managing\ Card\ Balance\ &\ Transactions\n
+comment1.params=
+comment1.target=Card\ getNewInstance()
+comment2.params=
+comment2.target=Card\ getInstance()
+comment3.params=
+comment3.target=Card()
+comment4.params=
+comment4.target=void\ setCard()
+comment5.params=
+comment5.target=java.lang.String\ getCardId()
+comment6.params=
+comment6.target=java.lang.String\ getCardCode()
+comment7.params=
+comment7.target=java.lang.String\ getBalance()
+comment8.params=
+comment8.target=void\ pay()
+comment9.params=
+comment9.target=void\ display()
+numComments=10

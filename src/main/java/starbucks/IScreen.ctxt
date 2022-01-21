@@ -1,0 +1,25 @@
+#BlueJ class context
+comment0.target=IScreen
+comment0.text=Screen\ Interface
+comment1.params=x\ y
+comment1.target=void\ touch(int,\ int)
+comment1.text=\n\ Send\ touch\ events\ to\ screen\n\ @param\ x\ Touch\ X\n\ @param\ y\ Touch\ Y\n
+comment2.params=
+comment2.target=java.lang.String\ display()
+comment2.text=\n\ Displays\ screen\ components\n\ @return\ Return\ Screen\ Contents\n
+comment3.params=
+comment3.target=java.lang.String\ name()
+comment3.text=\n\ Returns\ name\ of\ screen\n\ @return\ Screen\ Name\n
+comment4.params=
+comment4.target=void\ next()
+comment4.text=\n\ Navigate\ to\ next\ screen\n
+comment5.params=
+comment5.target=void\ prev()
+comment5.text=\n\ Navigate\ to\ previous\ screen\n
+comment6.params=s\ n
+comment6.target=void\ setNext(IScreen,\ java.lang.String)
+comment6.text=\n\ Set\ next\ screen\ with\ action\ name\n\ @param\ s\ Screen\n\ @param\ n\ Action\n
+comment7.params=s\ n
+comment7.target=void\ setPrev(IScreen,\ java.lang.String)
+comment7.text=\n\ Set\ previous\ screen\ with\ action\ name\n\ @param\ s\ Screen\n\ @param\ n\ Action\n
+numComments=8

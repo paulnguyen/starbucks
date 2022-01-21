@@ -1,0 +1,19 @@
+#BlueJ class context
+comment0.target=Passcode
+comment0.text=Passcode\ Screen\ Component
+comment1.params=x\ y
+comment1.target=void\ touch(int,\ int)
+comment1.text=\n\ Touch\ Event\ Ignored\ by\ Passcode\n\ @param\ x\ Touch\ X\n\ @param\ y\ Touch\ Y\n
+comment2.params=next
+comment2.target=void\ setNext(ITouchEventHandler)
+comment2.text=\n\ Set\ Next\ Touch\ Handler\n\ @param\ next\ Touch\ Event\ Handler\n
+comment3.params=
+comment3.target=java.lang.String\ display()
+comment3.text=\n\ Display\ "Echo\ Feedback"\ on\ Pins\ enterred\ so\ far\n\ @return\ Passcode\ String\ for\ Display\n
+comment4.params=c
+comment4.target=void\ addSubComponent(IDisplayComponent)
+comment4.text=\n\ Add\ Sub\ Component\ (Not\ used)\n\ @param\ c\ Sub\ Component\ to\ Add\n
+comment5.params=c\ key
+comment5.target=void\ keyEventUpdate(int,\ java.lang.String)
+comment5.text=\n\ Key\ Event\ Update\n\ @param\ c\ \ \ Count\ of\ Keys\ So\ Far\n\ @param\ key\ Last\ key\ Pressed\n
+numComments=6

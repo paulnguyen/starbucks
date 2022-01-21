@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=Store
+comment0.text=Store\ Screen
+comment1.params=
+comment1.target=Store()
+comment1.text=\n\ Constructor\n
+comment2.params=
+comment2.target=java.lang.String\ display()
+comment2.text=\n\ Return\ Screen\ Contents\n\ @return\ Map\ Screen\ Sample\ Content\n
+comment3.params=x\ y
+comment3.target=void\ touch(int,\ int)
+comment3.text=\n\ Handle\ Touch\ Event\ --\ Not\ Used.\n\ @param\ x\ Touch\ X\n\ @param\ y\ Touch\ Y\n
+numComments=4

@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.target=IMenuInvoker
+comment0.text=Menu\ Invoker\ Interfaces
+comment1.params=c
+comment1.target=void\ setCommand(IMenuCommand)
+comment1.text=\n\ Set\ Command\ for\ Invoker\n\ @param\ c\ Command\ Object\n
+comment2.params=
+comment2.target=void\ invoke()
+comment2.text=Invoke\ Menu\ Function
+numComments=3

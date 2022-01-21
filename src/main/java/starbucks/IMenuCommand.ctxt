@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.target=IMenuCommand
+comment0.text=Menu\ Command\ Interface
+comment1.params=
+comment1.target=void\ execute()
+comment1.text=Execute\ the\ Command
+comment2.params=target
+comment2.target=void\ setReceiver(IMenuReceiver)
+comment2.text=\ \n\ Configure\ the\ Receiver\ for\ the\ Command\n\ @param\ target\ Receiver\n
+numComments=3

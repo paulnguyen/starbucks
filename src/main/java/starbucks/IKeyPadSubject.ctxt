@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=IKeyPadSubject
+comment0.text=Key\ Pad\ Subject\ Interface
+comment1.params=obj
+comment1.target=void\ attach(IKeyPadObserver)
+comment1.text=\n\ Add\ Observer\ to\ Subscribers\ List\n\ @param\ obj\ Observer\ Object\n
+comment2.params=obj
+comment2.target=void\ removeObserver(IKeyPadObserver)
+comment2.text=\n\ Remove\ Observer\ from\ Subscription\n\ @param\ obj\ Observer\ Object\n
+comment3.params=
+comment3.target=void\ notifyObservers()
+comment3.text=\n\ Trigger\ Events\ to\ Observers\n
+numComments=4

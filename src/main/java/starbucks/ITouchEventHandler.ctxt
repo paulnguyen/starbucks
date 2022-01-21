@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.target=ITouchEventHandler
+comment0.text=Touch\ Event\ Handlers
+comment1.params=x\ y
+comment1.target=void\ touch(int,\ int)
+comment1.text=\n\ Touch\ Event\ at\ X\ and\ Y\n\ @param\ x\ X\ Coord\n\ @param\ y\ Y\ Coord\n
+comment2.params=next
+comment2.target=void\ setNext(ITouchEventHandler)
+comment2.text=\n\ Set\ Next\ Handler\ in\ Event\ Chain\n\ @param\ next\ Next\ Handler\ Object\n
+numComments=3

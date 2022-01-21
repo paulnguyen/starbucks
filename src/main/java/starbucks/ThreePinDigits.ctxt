@@ -1,0 +1,19 @@
+#BlueJ class context
+comment0.target=ThreePinDigits
+comment0.text=Three\ Pin\ Digit\ State
+comment1.params=m
+comment1.target=ThreePinDigits(IPinStateMachine)
+comment1.text=\n\ Constructor\n\ @param\ \ m\ Reference\ to\ State\ Machine\n
+comment2.params=
+comment2.target=void\ backspace()
+comment2.text=Backspace\ Event
+comment3.params=digit
+comment3.target=void\ number(java.lang.String)
+comment3.text=\n\ Number\ Event\n\ @param\ digit\ Digit\ pressed\n
+comment4.params=
+comment4.target=void\ validPin()
+comment4.text=Valid\ Pin\ Event
+comment5.params=
+comment5.target=void\ invalidPin()
+comment5.text=Invlid\ Pin\ Event
+numComments=6
