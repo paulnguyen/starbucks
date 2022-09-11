@@ -28,7 +28,7 @@ docker-setup:
 	docker network create --driver bridge starbucks
 
 docker-launch:
-	docker run --network starbucks --name starbucks-api -p 3000:3000 -td paulnguyen/starbucks-api:v1.0
+	docker run --network starbucks --name starbucks-api -p 3000:3000 --platform=linux/amd64 -td paulnguyen/starbucks-api:v1.0
 
 
 #####################################################
@@ -65,7 +65,7 @@ pay-for-order:
 #####################################################
 
 docker-build: 
-	docker build -t starbucks .
+	docker build --platform=linux/amd64 -t starbucks .
 	docker images
 
 docker-shell:
@@ -79,6 +79,7 @@ network-inspect:
 
 docker-run:
 	docker run \
+			--platform=linux/amd64 \
             --network starbucks \
 			--name starbucks -p 3000:3000 -td starbucks
 	docker ps
@@ -88,6 +89,7 @@ kong-database:
 
 kong-run:
 	docker run -d --name kong \
+			  --platform=linux/amd64 \
 	          --network starbucks \
               -e "KONG_DATABASE=cassandra" \
               -e "KONG_CASSANDRA_CONTACT_POINTS=kong-database" \

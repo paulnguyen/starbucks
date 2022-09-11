@@ -7,7 +7,7 @@ run:
 	node app.js
 
 docker-build: 
-	docker build -t nodejs .
+	docker build --platform=linux/amd64 -t nodejs .
 	docker images
 
 docker-clean:
@@ -24,11 +24,12 @@ network-inspect:
 	docker network inspect starbucks
 
 docker-run:
-	docker run --name starbucks-nodejs -p 8080:8080 -td starbucks-nodejs
+	docker run --name starbucks-nodejs -p 8080:8080 --platform=linux/amd64 -td starbucks-nodejs
 
 docker-setup:
 	docker network create --driver bridge starbucks
 
 docker-launch:
 	docker run --network starbucks --name starbucks-nodejs -p 8080:8080  \
-	-e "api_endpoint=http://starbucks-api:3000" -td paulnguyen/starbucks-nodejs:v1.0
+	-e "api_endpoint=http://starbucks-api:3000" --platform=linux/amd64 \
+	-td paulnguyen/starbucks-nodejs:v1.0
