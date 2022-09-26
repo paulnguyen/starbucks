@@ -28,7 +28,7 @@ docker-setup:
 	docker network create --driver bridge starbucks
 
 docker-launch:
-	docker run --network starbucks --name starbucks-api -p 3000:3000 --platform=linux/amd64 -td paulnguyen/starbucks-api:v1.0
+	docker run --platform=linux/amd64 --network starbucks --name starbucks-api -p 3000:3000 --platform=linux/amd64 -td paulnguyen/starbucks-api:v1.0
 
 
 #####################################################
