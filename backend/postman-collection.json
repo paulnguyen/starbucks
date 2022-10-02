@@ -1,9 +1,9 @@
 {
 	"info": {
-		"_postman_id": "f4d08364-61a3-4778-919c-bba7ac3bf7fb",
-		"name": "starbucks",
+		"_postman_id": "7676f547-7acf-4995-b43b-d3a02a6cd831",
+		"name": "STARBUCKS API COLLECTIONS",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
-		"_exporter_id": "6432255"
+		"_exporter_id": "1307988"
 	},
 	"item": [
 		{
@@ -2040,12 +2040,15 @@
 				},
 				{
 					"name": "Get Orders",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
 					"request": {
-						"method": "POST",
+						"method": "GET",
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n\t\"Drink\": \"Latte\",\n\t\"Milk\":  \"Whole\",\n\t\"Size\":  \"Grande\"\n}  \n",
+							"raw": "",
 							"options": {
 								"raw": {
 									"language": "json"
